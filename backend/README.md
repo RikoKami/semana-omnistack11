@@ -45,4 +45,6 @@ Base Environment:
 
 *caso seu pc seja 32bits, utilize o postman
 
+## Banco de Dado utilizado: SQLite
+
 
