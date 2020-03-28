@@ -48,3 +48,7 @@ Base Environment:
 ## Banco de Dado utilizado: SQLite
 
 
+Para criar uma table:
+```
+npx knex migrate:make name_table
+```
