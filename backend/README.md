@@ -52,3 +52,23 @@ Para criar uma table:
 ```
 npx knex migrate:make name_table
 ```
+
+Para executar a migration
+```
+npx knex migrate:latest
+```
+
+Help migration
+```
+npx knex
+```
+
+Desfaz a ultima migration iniciada
+```
+npx knex rollback
+```
+
+Listagem das migrations que já foram executadas:
+```
+npx knex migrate:status
+```
