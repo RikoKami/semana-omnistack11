@@ -34,17 +34,66 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .content{
+        width: 100%;
+        padding: 96px;
+        background: #f0f0f5;
+        box-shadow: 0 0 100px hsl(0, 0%, 90%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        section{
+            width: 100%;
+            max-width: 380px;
+            h1{
+                margin: 64px 0 32px;
+                font-size: 32px;
+            }
+            p{
+                font-size: 18px;
+                color: #737380;
+                line-height: 32px;
+            }
+        }
+        form{
+            width: 100%;
+            max-width: 450px;
+            input, textarea {
+                margin-top: 8px;
+            }
+            .inputGroup{
+                display: flex;
+                input{
+                    &:nth-child(2){
+                        margin-left: 8px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 form {
-    input{
+    input {
         width: 100%;
         height: 60px;
         color: #333;
         border: 1px solid #dcdce6;
         border-radius: 8px;
         padding: 0 24px;
+    }
+    textarea{
+        min-height: 140px;
+        width: 100%;
+        color: #333;
+        border: 1px solid #dcdce6;
+        border-radius: 8px;
+        padding: 16px 24px;
+        line-height: 24px;
+        resize: vertical;
     }
 }
 .button{

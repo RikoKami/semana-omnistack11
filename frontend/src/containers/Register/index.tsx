@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
 import logo from "../../assets/images/logo.svg";
-import './styles.scss';
 
 const Register = () => {
     return (
