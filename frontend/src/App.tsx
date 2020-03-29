@@ -1,11 +1,11 @@
 import React from 'react';
-import Logon from './containers/Logon';
+import Routes from './routes';
 
 import "./assets/styles/global.scss";
 
 function App() {
   return (
-    <Logon />
+    <Routes />
   );
 }
 
