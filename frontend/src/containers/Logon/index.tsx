@@ -19,12 +19,10 @@ const Logon = () => {
 
     const handleLogon = async (data: any) => {
         try {
-            const response = await api.post('sessions', data.id);
-            console.log(data)
-            console.log(response.data.id);
+            const response = await api.post('sessions', data);
 
             const dataONG = {
-                id: response,
+                id: data.id,
                 name: response.data.name,
             }
             localStorage.setItem('ong', JSON.stringify(dataONG));
@@ -33,9 +31,7 @@ const Logon = () => {
                 text: "",
                 status: false
             });
-            setTimeout(() => {
-                history.push('/');
-            }, 2000);
+            history.push('/profile');
         } catch (error) {
             setMessage({
                 text: `Falha no login, tente novamente.`,

@@ -1,10 +1,38 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
 import logo from "../../assets/images/logo.svg";
+import { useForm } from 'react-hook-form';
+import Message from '../../components/Message';
+import api from '../../services/api';
 
 const NewIncident = () => {
+    const {register, errors, handleSubmit } = useForm();
+    const history = useHistory();
+    const [message, setMessage] = useState({
+        text: "",
+        status: false
+    });
+
+    let ong = JSON.parse(localStorage.getItem("ong") || '{}');
+
+    const handleNewIncident = async (data: any) => {
+        try {
+            await api.post('incidents', data, {
+                headers: {
+                    authorization: ong.id
+                }
+            });
+            history.push('/profile');
+        } catch (error) {
+            setMessage({
+                text: `Erro no cadastro caso, tente novamente`,
+                status: true
+            });
+        }
+    }
+
     return(
         <div className="container">
             <div className="content">
@@ -19,12 +47,19 @@ const NewIncident = () => {
                     </Link>
                 </section>
 
-                <form>
-                    <input placeholder="Título do caso" />
-                    <textarea placeholder="Descrição" />
-                    <input placeholder="Valor em reais" />
+                <form onSubmit={handleSubmit(handleNewIncident)}>
+                    <input ref={register({ required: true })} name="title" placeholder="Título do caso" />
+                    {errors.title && errors.title.type === "required" && <Message className="message" children="Este campo é requirido" />}
+
+                    <textarea ref={register({ required: true })} name="description" placeholder="Descrição" />
+                    {errors.description && errors.description.type === "required" && <Message className="message" children="Este campo é requirido" />}
+
+                    <input ref={register({ required: true })} name="value" placeholder="Valor em reais" />
+                    {errors.value && errors.value.type === "required" && <Message className="message" children="Este campo é requirido" />}
                   
                     <button className="button" type="submit">Cadastrar</button>
+
+                    {message.status && <Message className="status" children={message.text} />}
                 </form>
             </div>
         </div>
