@@ -63,12 +63,11 @@
                 margin-top: 8px;
             }
             .inputGroup{
-                display: flex;
-                input{
-                    &:nth-child(2){
-                        margin-left: 8px;
-                        width: 100px;
-                    }
+                display: grid;
+                grid-template-columns: 1fr 100px;
+                grid-gap: 0 12px;
+                .message{
+                    grid-row: 2;
                 }
             }
         }
@@ -94,6 +93,18 @@ form {
         padding: 16px 24px;
         line-height: 24px;
         resize: vertical;
+    }
+    .status{
+        padding: 10px;
+        background: #673AB7;
+        margin-top: 10px;
+        color: #fff;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .message{
+        margin-top: 8px;
+        color: #E02041;
     }
 }
 .button{
