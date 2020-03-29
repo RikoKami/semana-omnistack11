@@ -1,22 +1,64 @@
-import React from 'react';
+import React, { useState } from 'react';
+import api from '../../services/api';
+import { useForm } from 'react-hook-form';
 import { FiLogIn } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import heroesImg from "../../assets/images/heroes.png";
 import logo from "../../assets/images/logo.svg";
 import './styles.scss';
+import Message from '../../components/Message';
 
 const Logon = () => {
+    const { register, handleSubmit, errors } = useForm();
+    const history = useHistory();
+    const [message, setMessage] = useState({
+        text: "",
+        status: false
+    });
+
+    const handleLogon = async (data: any) => {
+        try {
+            const response = await api.post('sessions', data.id);
+            console.log(data)
+            console.log(response.data.id);
+
+            const dataONG = {
+                id: response,
+                name: response.data.name,
+            }
+            localStorage.setItem('ong', JSON.stringify(dataONG));
+
+            setMessage({
+                text: "",
+                status: false
+            });
+            setTimeout(() => {
+                history.push('/');
+            }, 2000);
+        } catch (error) {
+            setMessage({
+                text: `Falha no login, tente novamente.`,
+                status: true
+            });
+            
+        }
+    }
+
     return (
         <main className="container">
             <section className="form">
                 <img src={logo} alt="Be The Hero"/>
 
-                <form>
+                <form onSubmit={handleSubmit(handleLogon)}>
                     <h1>Faça seu logon</h1>
 
-                    <input placeholder="Sua ID" />
+                    <input ref={register({ required: true })} name="id" placeholder="Sua ID" />
+                    {errors.id && errors.id.type === "required" && <Message className="message" children="Este campo é requirido" />}
+
                     <button type="submit" className="button">Entrar</button>
+
+                    {message.status && <Message className="status" children={message.text} />}
 
                     <Link to="/register" className="back-link">
                         <FiLogIn size={16} color="E02041" />
