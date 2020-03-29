@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Feather } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
-import { View, Image, Text, TouchableOpacity } from 'react-native';
+import { View, Image, Text, TouchableOpacity, FlatList } from 'react-native';
 
 import api from '../../services/api';
 
 import logoImg from "../../assets/logo.png";
 import styles from './styles';
-import { FlatList } from 'react-native-gesture-handler';
 
 const Incidents = () => {
     const [incidents, setIncidents] = useState([]);
@@ -33,8 +32,8 @@ const Incidents = () => {
         setIncidents([...incidents, ...response.data]);
         setTotal(response.headers['X-Total-Count']);
 
+        setPage(page + 1);
         setLoading(false);
-        setPage(page++);
     }
 
     useEffect(() => {
@@ -71,7 +70,7 @@ const Incidents = () => {
                             {Intl.NumberFormat('pt-BR', { 
                                 style: 'currency',
                                 currency: 'BRL'
-                            }.format(incident.value))}
+                            }).format(incident.value)}
                         </Text>
 
                         <TouchableOpacity 
