@@ -44,32 +44,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### FrontEnd:
 
-<img alt="react" src="https://img.shields.io/badge/react-%5E16.13.1-blue">
-<img alt="typescript" src="https://img.shields.io/badge/typescript-%5E3.8.3-blue">
-<img alt="react-router-dom" src="https://img.shields.io/badge/react--router--dom-%5E5.1.2-blue">
-<img alt="axios" src="https://img.shields.io/badge/axios-%5E0.19.2-blue">
-<img alt="react-hook-form" src="https://img.shields.io/badge/react--hook--form-%5E5.2.0-%23ec5990">
-<img alt="node-sass" src="https://img.shields.io/badge/node--sass-%5E4.13.1-brightgreen">
-<img alt="react-icons" src="https://img.shields.io/badge/react--icons-%5E3.9.0-blue">
+<img alt="react" src="https://img.shields.io/badge/react-%5E16.13.1-blue"> <img alt="typescript" src="https://img.shields.io/badge/typescript-%5E3.8.3-blue"> <img alt="react-router-dom" src="https://img.shields.io/badge/react--router--dom-%5E5.1.2-blue"> <img alt="axios" src="https://img.shields.io/badge/axios-%5E0.19.2-blue"> <img alt="react-hook-form" src="https://img.shields.io/badge/react--hook--form-%5E5.2.0-%23ec5990"> <img alt="node-sass" src="https://img.shields.io/badge/node--sass-%5E4.13.1-brightgreen"> <img alt="react-icons" src="https://img.shields.io/badge/react--icons-%5E3.9.0-blue">
 
 ### BackEnd:
 
-<img alt="express" src="https://img.shields.io/badge/express-%5E4.17.1-blue">
-<img alt="cors" src="https://img.shields.io/badge/cors-%5E2.8.5-blue">
-<img alt="knex" src="https://img.shields.io/badge/knex-%5E0.20.13-blue">
-<img alt="sqlite3" src="https://img.shields.io/badge/sqlite3-%5E4.1.1-blue">
+<img alt="express" src="https://img.shields.io/badge/express-%5E4.17.1-blue"> <img alt="cors" src="https://img.shields.io/badge/cors-%5E2.8.5-blue"> <img alt="knex" src="https://img.shields.io/badge/knex-%5E0.20.13-blue"> <img alt="sqlite3" src="https://img.shields.io/badge/sqlite3-%5E4.1.1-blue">
 
 
 ### Mobile: 
-<img alt="react" src="https://img.shields.io/badge/react-%5E16.9.0-blue">
-<img alt="react-native" src="https://img.shields.io/badge/react--native-%5E4.17.1-blue">
-<img alt="axios" src="https://img.shields.io/badge/axios-%5E0.19.2-blue">
-<img alt="expo" src="https://img.shields.io/badge/expo-~36.0.0-brightgreen">
-<img alt="expo-constants" src="https://img.shields.io/badge/expo--constants-~8.0.0-blue">
-<img alt="expo-mail-composer" src="https://img.shields.io/badge/expo--mail--composer-~8.0.0-blue">
-<img alt="intl" src="https://img.shields.io/badge/intl-%5E1.2.5-blue">
-<img alt="react-native-dotenv" src="https://img.shields.io/badge/react--native--dotenv-%5E0.2.0-blue">
-<img alt="react-native-gesture-handler" src="https://img.shields.io/badge/react--native--gesture--handler-~1.5.0-blue">
+<img alt="react" src="https://img.shields.io/badge/react-%5E16.9.0-blue"> <img alt="react-native" src="https://img.shields.io/badge/react--native-%5E4.17.1-blue"> <img alt="axios" src="https://img.shields.io/badge/axios-%5E0.19.2-blue"> <img alt="expo" src="https://img.shields.io/badge/expo-~36.0.0-brightgreen"> <img alt="expo-constants" src="https://img.shields.io/badge/expo--constants-~8.0.0-blue"> <img alt="expo-mail-composer" src="https://img.shields.io/badge/expo--mail--composer-~8.0.0-blue"> <img alt="intl" src="https://img.shields.io/badge/intl-%5E1.2.5-blue"> <img alt="react-native-dotenv" src="https://img.shields.io/badge/react--native--dotenv-%5E0.2.0-blue"> <img alt="react-native-gesture-handler" src="https://img.shields.io/badge/react--native--gesture--handler-~1.5.0-blue">
 
 
 <!-- ## :trophy: Minhas Implementações
