@@ -53,6 +53,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 <img alt="react" src="https://img.shields.io/badge/react-%5E16.9.0-blue"> <img alt="react-native" src="https://img.shields.io/badge/react--native-%5E4.17.1-blue"> <img alt="axios" src="https://img.shields.io/badge/axios-%5E0.19.2-blue"> <img alt="expo" src="https://img.shields.io/badge/expo-~36.0.0-brightgreen"> <img alt="expo-constants" src="https://img.shields.io/badge/expo--constants-~8.0.0-blue"> <img alt="expo-mail-composer" src="https://img.shields.io/badge/expo--mail--composer-~8.0.0-blue"> <img alt="intl" src="https://img.shields.io/badge/intl-%5E1.2.5-blue"> <img alt="react-native-dotenv" src="https://img.shields.io/badge/react--native--dotenv-%5E0.2.0-blue"> <img alt="react-native-gesture-handler" src="https://img.shields.io/badge/react--native--gesture--handler-~1.5.0-blue">
 
 
+### Layout
+
+[Figma](https://www.figma.com/file/2C2yvw7jsCOGmaNUDftX9n/Be-The-Hero---OmniStack-11)
+
 <!-- ## :trophy: Minhas Implementações
 
 Algumas pequenas melhorias que adicionei ao projeto:
