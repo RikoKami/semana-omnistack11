@@ -14,8 +14,6 @@
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
-<h3>Packages:</h3>
-
 <p align="center">
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#computer-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;
