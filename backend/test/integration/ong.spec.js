@@ -5,6 +5,7 @@ const connection = require('../../src/database/connections');
 describe('ong', () => {
     /* Antes de executar o teste roda a migration */
     beforeEach(async() => {
+        await connection.migrate.rollback();
         await connection.migrate.latest();
     })
 
